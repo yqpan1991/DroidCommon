@@ -48,7 +48,7 @@ public class DensityUtils {
      * @param pxValue  px的数值
      * @return  px to dp
      */
-    public static int px2dip(Context context, float pxValue) {
+    public static int px2Dp(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
     }
@@ -59,7 +59,7 @@ public class DensityUtils {
      * @param dpValue dp数值
      * @return dp to  px
      */
-    public static int dip2px(Context context, float dpValue) {
+    public static int dp2Px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
