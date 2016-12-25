@@ -7,7 +7,7 @@ import java.util.Queue;
  * Created by PandaPan on 2016/12/25.
  */
 
-public class ExecutGroupInfo {
+class ExecutGroupInfo {
     public int mConcurrentCount;
     public String mGroupName;
     public Queue<ExecuteInfo> mRunningList;

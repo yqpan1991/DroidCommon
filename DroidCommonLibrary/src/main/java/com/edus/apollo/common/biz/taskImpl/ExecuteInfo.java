@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
  * Created by PandaPan on 2016/12/25.
  */
 
-public class ExecuteInfo<T> implements Comparable<ExecuteInfo>{
+class ExecuteInfo<T> implements Comparable<ExecuteInfo>{
 
     public Priority mPriority;
     public String mGroupName;

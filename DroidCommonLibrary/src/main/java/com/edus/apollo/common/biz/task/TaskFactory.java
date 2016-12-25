@@ -29,7 +29,7 @@ public class TaskFactory {
      * @param priority 任务在分组中的优先级
      * @return
      */
-    public Task makeTask(String groupName, Priority priority){
+    public Task getTask(String groupName, Priority priority){
         return new TaskImpl(groupName, priority);
     }
 

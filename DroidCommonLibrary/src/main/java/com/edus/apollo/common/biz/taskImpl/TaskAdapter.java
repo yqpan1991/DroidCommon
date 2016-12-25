@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
  * Created by PandaPan on 2016/12/25.
  */
 
-public class TaskAdapter<T> implements Callable<T> {
+class TaskAdapter<T> implements Callable<T> {
 
     private T mResult;
     private Runnable mRunnable;

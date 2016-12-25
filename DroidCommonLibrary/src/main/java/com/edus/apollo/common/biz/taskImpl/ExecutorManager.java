@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 所有的更改,都需要在分发控制线程中做
  */
 
-public class ExecutorManager {
+class ExecutorManager {
     private static final int MSG_TYPE_EXECUTOR_BEGIN = 1000;
     private static final int MSG_TYPE_EXECUTOR_DONE = 1001;
     private static ExecutorManager sInstance;
