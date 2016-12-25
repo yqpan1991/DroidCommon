@@ -17,4 +17,14 @@ class ExecutGroupInfo {
         mRunningList = new PriorityQueue<>();
         mWaitingList = new PriorityQueue<>();
     }
+
+    @Override
+    public String toString() {
+        return "ExecutGroupInfo{" +
+                "mConcurrentCount=" + mConcurrentCount +
+                ", mGroupName='" + mGroupName + '\'' +
+                ", mRunningList=" + mRunningList +
+                ", mWaitingList=" + mWaitingList +
+                '}';
+    }
 }

@@ -7,6 +7,7 @@ import android.text.TextUtils;
 
 import com.edus.apollo.common.biz.task.Priority;
 import com.edus.apollo.common.utils.device.DeviceInfo;
+import com.edus.apollo.common.utils.log.LogUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +24,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 
 class ExecutorManager {
+
+    private final String TAG = this.getClass().getSimpleName();
+
     private static final int MSG_TYPE_EXECUTOR_BEGIN = 1000;
     private static final int MSG_TYPE_EXECUTOR_DONE = 1001;
     private static ExecutorManager sInstance;
@@ -44,6 +48,7 @@ class ExecutorManager {
         mHandlerThread.start();
         mControlHandler = new Handler(mHandlerThread.getLooper(), mDispatchCallback);
         int coreNumber = DeviceInfo.getNumberOfCPUCores();
+        LogUtils.e(TAG, "cpu cores:"+coreNumber);
         if(coreNumber < 2){
             coreNumber = 2;
         }
@@ -101,6 +106,7 @@ class ExecutorManager {
         }
 
         if( groupInfo.mRunningList.size() < groupInfo.mConcurrentCount){
+            groupInfo.mRunningList.add(executeInfo);
             executeInfo.mFuture = mExecutor.submit(executeInfo.mCallable);
         }else{
             groupInfo.mWaitingList.add(executeInfo);
@@ -170,6 +176,7 @@ class ExecutorManager {
         }else{
             groupInfo.mConcurrentCount = concurrentCount;
         }
+        LogUtils.e(TAG, groupInfo.toString());
     }
 
 
@@ -194,10 +201,11 @@ class ExecutorManager {
     private void handleExecuteDone(Callable obj) {
         //1. 判断所有的任务列表中,是否还有他,如果有,那么做通知的操作
         //2. 如果没有,那么直接不用做通知
-        //3. 重新遍历整个群组的信息,查看是否要需要执行的群组信息,因为任务在强制取消后,可能会抛出interrupt的异常,导致没有处理,因而需要整体的再次调度一下
+        //3. 从正在运行的群组队列中删除
+        //4. 重新遍历整个群组的信息,查看是否要需要执行的群组信息,因为任务在强制取消后,可能会抛出interrupt的异常,导致没有处理,因而需要整体的再次调度一下
         if(mAllTaskInfoMap.containsKey(obj)){
             final ExecuteInfo executeInfo = mAllTaskInfoMap.remove(obj);
-            if(executeInfo.mCallback != null){
+            if(executeInfo.mCallback != null && !executeInfo.mFuture.isCancelled()){
                 //TODO: 暂时不设置callback的处理
                /* new Handler().post(new Runnable() {
                     @Override
@@ -207,6 +215,11 @@ class ExecutorManager {
                 });*/
             }
             mAllTaskInfoMap.remove(obj);
+            String groupName = getValidGroupName(executeInfo.mGroupName);
+            ExecutGroupInfo executGroupInfo = mGroupInfoMap.get(groupName);
+            if(executeInfo != null){
+                executGroupInfo.mRunningList.remove(executeInfo);
+            }
         }
 
         for(String groupName : mGroupInfoMap.keySet()){
