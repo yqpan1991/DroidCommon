@@ -221,7 +221,7 @@ class ExecutorManager {
 
     private String getValidGroupName(String groupName){
         if(TextUtils.isEmpty(groupName)){
-            return "ExecutorManager-DEFAULT_GROUPNAME";
+            return "ExecutorManager-DEFAULT-GROUPNAME";
         }
         return groupName;
     }
