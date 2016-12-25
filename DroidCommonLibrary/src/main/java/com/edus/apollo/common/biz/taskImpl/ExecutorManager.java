@@ -53,7 +53,7 @@ class ExecutorManager {
             @Override
             public Thread newThread(Runnable r) {
                 //TODO: 需要设置该线程的异常处理器
-                return new Thread("ExecutorManager-thread-"+mAtomicInteger.getAndIncrement());
+                return new Thread( r, "ExecutorManager-thread-"+mAtomicInteger.getAndIncrement() );
             }
         });
     }
@@ -101,7 +101,7 @@ class ExecutorManager {
         }
 
         if( groupInfo.mRunningList.size() < groupInfo.mConcurrentCount){
-            executeInfo.mFuture = mExecutor.submit(callable);
+            executeInfo.mFuture = mExecutor.submit(executeInfo.mCallable);
         }else{
             groupInfo.mWaitingList.add(executeInfo);
         }

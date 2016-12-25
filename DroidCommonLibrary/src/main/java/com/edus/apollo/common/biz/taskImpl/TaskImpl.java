@@ -27,7 +27,7 @@ public class TaskImpl implements Task {
 
     @Override
     public void start(Runnable runnable) {
-        if(!mIsStarted){
+        if(!mIsStarted && !mIsCanceled){
             if(runnable != null){
                 mIsStarted = true;
                 mCallable = new TaskAdapter(runnable, null);
@@ -45,7 +45,7 @@ public class TaskImpl implements Task {
     public void cancel(boolean force) {
         if(!mIsCanceled){
             mIsCanceled = true;
-            if(mCallable != null){
+            if(mIsStarted && mCallable != null){
                 ExecutorManager.getInstance().cancelExecuteInfo(mCallable, force);
             }
         }

@@ -12,7 +12,7 @@ public class TaskFactory {
 
     }
 
-    public TaskFactory getInstance(){
+    public static TaskFactory getInstance(){
         if(sInstance == null){
             synchronized (TaskFactory.class){
                 if(sInstance == null){
