@@ -1,4 +1,4 @@
-package com.edus.apollo.common.biz.taskImpl;
+package com.edus.apollo.common.biz.taskimpl;
 
 import java.util.concurrent.Callable;
 

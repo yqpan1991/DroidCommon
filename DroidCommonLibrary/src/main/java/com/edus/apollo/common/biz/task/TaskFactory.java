@@ -1,6 +1,6 @@
 package com.edus.apollo.common.biz.task;
 
-import com.edus.apollo.common.biz.taskImpl.TaskImpl;
+import com.edus.apollo.common.biz.taskimpl.TaskImpl;
 
 /**
  * Created by PandaPan on 2016/12/25.

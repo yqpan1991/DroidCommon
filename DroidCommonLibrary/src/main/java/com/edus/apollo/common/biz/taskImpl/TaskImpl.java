@@ -1,4 +1,4 @@
-package com.edus.apollo.common.biz.taskImpl;
+package com.edus.apollo.common.biz.taskimpl;
 
 import com.edus.apollo.common.biz.task.Priority;
 import com.edus.apollo.common.biz.task.Task;
