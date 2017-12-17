@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.android.support.test:rules-0.5">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/DroidCommonLibrary/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/res" />
-      <root url="jar://$PROJECT_DIR$/DroidCommonLibrary/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/427105832d86fb135581cc7848fcec0f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/427105832d86fb135581cc7848fcec0f/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-javadoc.jar!/" />

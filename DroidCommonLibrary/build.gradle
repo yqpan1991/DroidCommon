@@ -4,7 +4,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         minSdkVersion 15
@@ -29,7 +29,7 @@ dependencies {
 }
 
 group = 'com.edus.apollo.common'
-version = '0.0.1'
+version = '0.0.2'
 
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
