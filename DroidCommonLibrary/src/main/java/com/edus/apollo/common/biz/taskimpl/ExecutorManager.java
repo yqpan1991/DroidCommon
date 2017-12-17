@@ -114,8 +114,8 @@ class ExecutorManager {
     }
 
     public void cancelExecuteInfo(final Callable callable, final boolean force){
-        //取消操作,可能是比较着急的动作,因而在下次调度时,不放置到队列尾部
-        mControlHandler.postAtFrontOfQueue(new Runnable() {
+        //直接插入到消息后面即可,如果插入到开始,可能任务都没有开始执行
+        mControlHandler.post(new Runnable() {
             @Override
             public void run() {
                 cancelExecuteInfoImp(callable, force);
@@ -151,7 +151,7 @@ class ExecutorManager {
     }
 
     public void setConcurrentCount(final String groupName, final int concurrentCount){
-        mControlHandler.postAtFrontOfQueue(new Runnable() {
+        mControlHandler.post(new Runnable() {
             @Override
             public void run() {
                 setConcurrentCountImpl(groupName, concurrentCount);
