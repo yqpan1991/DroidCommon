@@ -3,66 +3,66 @@
 
     <item
         is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.edus.apollo.common\DroidCommonLibrary\0.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c68c38bf31abfb433cb89ee1a1410cc5b3183e56">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\com.edus.apollo.common-DroidCommonLibrary-0.0.1_ecc0ac86a32ac2797d57b920d4be6f3a31ab817e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_97b197fc55cbf339688cdcd803f3111e9eee026f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\dev-config\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="/Users/panda/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_7c432377d90f6094227cd8a1bd34790f7d165d40.jar" />
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_a32ba154129d3aba717138de1a28ab9c34ddc9e0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_22e98bb3d0c8936023d0d1d03cfba8f3576d07f3.jar" />
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_0fcb2052dd5a814f4d0f93a1cea7e15d36991520.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_434a0251de99c0012715542d6e7a668607ba319a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e0d9901a8af371a93dd62ea0e9827b9be487700d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="J:\dev\sutdio_projects\DroidCommon\uisample\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_03098e329a46131e0733a945cee2674d6bfb77b5.jar" />
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_885fd9fcb09c886209bbf49470b4c1b3872d74d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_fb5abfddc14d18ecadf18bb66ddd60da87323b7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_a9138554b4d59f7d9e9e083a6585048e1f5e9f14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_eff1187262f2871f18722795d55c0a0b740c1084.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/exploded-aar/com.edus.apollo.common/DroidCommonLibrary/0.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="302a37791e3179eab59b98474ebf79b5b691f90d">
+        <dex dex="/Users/panda/dev/project/my-project/DroidCommon/uisample/build/intermediates/pre-dexed/debug/com.edus.apollo.common-DroidCommonLibrary-0.0.1_3df493c95ef975ce1f29a0663bebf0be32c3c53d.jar" />
     </item>
 
 </items>

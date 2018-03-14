@@ -1,24 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.edus.apollo.MainActivity">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.edus.apollo.MainActivity">
 
     <Button
-        android:id="@+id/bt_resize_checker"
-        android:text="keyboard resize checker"
-        android:onClick="keyboardResizeCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            android:id="@+id/bt_resize_checker"
+            android:text="keyboard resize checker"
+            android:onClick="keyboardResizeCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/bt_adjust_checker"
-        android:layout_below="@id/bt_resize_checker"
-        android:text="keyboard adjustPan checker"
-        android:onClick="keyboardAdjustCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            android:id="@+id/bt_adjust_checker"
+            android:layout_below="@id/bt_resize_checker"
+            android:text="keyboard adjustPan checker"
+            android:onClick="keyboardAdjustCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-</RelativeLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="http://com.edus.apollo/native/viewdrawactivity"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="http://com.edus.apollo/native/keyboardadjustpanactivity?name=panda"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="http://com.edus.apollo/native/keyboardadjustpanactivity"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="http://www.baidu.com"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/bt_nav_internal"
+            android:layout_width="wrap_content"
+            android:text="内部跳转http://com.edus.apollo/native/viewdrawactivity"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/bt_nav_internal_anim"
+            android:layout_width="wrap_content"
+            android:text="内部跳转动画http://com.edus.apollo/native/viewdrawactivity"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

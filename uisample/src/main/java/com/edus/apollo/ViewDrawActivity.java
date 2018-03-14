@@ -1,5 +1,6 @@
 package com.edus.apollo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class ViewDrawActivity extends AppCompatActivity implements View.OnClickL
         mTvContent.setText("hello world, what's your name");
         mLflContent.setLevel(2);
         mArivTest = (AspectRatioImageView) findViewById(R.id.ariv_test);
+        mArivTest.setOnClickListener(this);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -43,6 +45,17 @@ public class ViewDrawActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.ariv_test:
+                handleBack();
+                break;
+        }
+    }
 
+    private void handleBack() {
+        Intent intent = new Intent();
+        intent.putExtra("TEST_KEY", "just_test_reslt");
+        setResult(RESULT_OK, intent);
+        finish();
     }
 }

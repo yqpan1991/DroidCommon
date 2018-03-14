@@ -3,6 +3,7 @@ package com.edus.apollo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.edus.apollo.common.utils.inputmethod.KeyBoardAdjustPanChecker;
@@ -15,6 +16,9 @@ public class KeyboardAdjustPanActivity extends AppCompatActivity implements View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_keyboard_adjust);
+        String internalName = getIntent().getStringExtra("internal_name");
+        EditText editText = (EditText) findViewById(R.id.et_top);
+        editText.setText(internalName);
         mChecker = new KeyBoardAdjustPanChecker(this);
         mChecker.setOnKeyBoardStateChangeListener(this);
     }
