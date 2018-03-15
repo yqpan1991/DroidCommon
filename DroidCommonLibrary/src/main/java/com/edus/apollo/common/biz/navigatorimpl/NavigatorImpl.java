@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Description.
+ * 跳转器
  *
  * @author panda
  */
@@ -59,7 +59,6 @@ public class NavigatorImpl implements Navigator {
         }
     }
 
-
     @Override
     public Navigator from(Context context) {
         mContext = context;
@@ -79,7 +78,7 @@ public class NavigatorImpl implements Navigator {
         }else{
             PageInfo pageInfo = mPageInfoMap.get(path);
             if(pageInfo == null || pageInfo.getNavParamsParser() == null){
-                //todo: 兜底逻辑
+                //todo: 异常逻辑
                 return;
             }
             NavParams navParams = pageInfo.getNavParamsParser().parse2NavParams(pageInfo.getTargetActivity(), url);

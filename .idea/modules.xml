@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DroidCommon.iml" filepath="$PROJECT_DIR$/DroidCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidCommonLibrary/DroidCommonLibrary.iml" filepath="$PROJECT_DIR$/DroidCommonLibrary/DroidCommonLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uisample/uisample.iml" filepath="$PROJECT_DIR$/uisample/uisample.iml" />
+    </modules>
+  </component>
+</project>

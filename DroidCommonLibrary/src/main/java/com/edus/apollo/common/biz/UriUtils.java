@@ -17,6 +17,7 @@ public class UriUtils {
         }
         Uri parse = Uri.parse(url);
         Uri.Builder uriBuilder = Uri.parse("").buildUpon();
+        //todo: 端口是否需要处理
         return uriBuilder.scheme(parse.getScheme()).authority(parse.getAuthority()).path(parse.getPath()).build().toString();
     }
 
