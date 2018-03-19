@@ -54,7 +54,9 @@ public class RouterActivity extends Activity {
                     }
                     extra.putString(Constants.REAL_JUMP_URI_KEY,data.toString());
                     navParams.setExtra(extra);
-                    navParams.setFlag(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    navParams.setFlag(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                            | Intent.FLAG_ACTIVITY_NEW_TASK
+                            | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     return navParams;
                 }
             });
